@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeBron James Stats</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <div id="charts-container">
+    <h1>LeBron James Career Stats</h1>
+    <h3>LeBron James has played 21 seasons for the Cavaliers, Lakers, and Heat. He has averaged 27.1 points, 7.5 rebounds, and 7.4 assists in 1,492 regular-season games. </h3>
+    <h3>He has won the Rookie of the Year award, 4 MVP awards, 4 Finals MVP awards, and 4 NBA championships.</h3>
+    <h3>He was selected to play in 19 All-Star games.</h3>
+    <h1>LeBron James stats each season</h1>
+    <label for="stat-select">Choose a stat:</label>
+    <select id="stat-select">
+      <option value="PTS">Points</option>
+      <option value="AST">Assists</option>
+      <option value="TRB">Total Rebounds</option>
+      <option value="BLK">Blocks</option>
+      <option value="STL">Steals</option>
+      <option value="TOV">Turnovers</option>
+      <option value="G">Games Played</option>
+      <option value="MP">Minutes Played</option>
+    </select>
+    <div id="chart"></div>
+
+    <h1>Points, assists, rebounds, steals, blocks and turnovers over time</h1>
+    <div class="checkbox-container">
+      <label><input type="checkbox" id="pts" checked> Points</label>
+      <label><input type="checkbox" id="ast" checked> Assists</label>
+      <label><input type="checkbox" id="trb" checked> Rebounds</label>
+      <label><input type="checkbox" id="stl" checked> Steals</label>
+      <label><input type="checkbox" id="blk" checked> Blocks</label>
+      <label><input type="checkbox" id="tov" checked> Turnovers</label>
+    </div>
+    <div id="chart-line"></div>
+    <div class="tooltip" id="tooltip"></div>
+    
+    <h1>Radar chart to showcase LeBron's stats in comparison to league averages</h1>
+    <label for="season-select">Select Season:</label>
+    <select id="season-select"></select>
+    <div id="chart-radar"></div>
+
+    <h1>Career shooting splits in comparison to league averages</h1>
+    <div id="chart-heatmap"></div>
+
+    <h1>LeBron James years spent on each team</h1>
+    <div id="chart-pie"></div>
+    <div id="legend"></div>
+  </div>
+
+</body>
+</html>
